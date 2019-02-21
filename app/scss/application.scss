@@ -5,6 +5,8 @@
 
 
 // Import your files
+@import 'global/vars';
+@import 'global/mixins';
 @import 'global/default';
 
 @import 'views/_home'
