@@ -4,18 +4,24 @@ html(class='no-js')
 		meta(charset='utf-8')
 		meta(http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1')
 		meta(name='viewport', content='shrink-to-fit=no, initial-scale=1.0, minimum-scale=1, width=device-width, height=device-height')
-		title Site_Title
+
+		block title
+			title Site_Title
 
 		//- metatags
-		meta(name='description', content='Page_description')
-		meta(name='subject', content='Page_subject')
+		block google_metatags
+			meta(name='description', content='Page_description')
+			meta(name='subject', content='Page_subject')
 
 		//- Share graphs for social media
-		meta(property="og:url" 			content="PLACE_YOUR_URL")
-		meta(property="og:type" 		content="TYPE")
-		meta(property="og:title" 		content="PLACE_YOUR_TITLE")
-		meta(property="og:description" 	content="PLACE_YOUR_DESCRIPTION")
-		meta(property="og:image" 		content="PLACE_YOUR_IMAGE_URL")
+		block og_metatags
+			meta(property="og:url" 			content="PLACE_YOUR_URL")
+			meta(property="og:title" 		content="PLACE_YOUR_TITLE")
+			meta(property="og:description" 	content="PLACE_YOUR_DESCRIPTION")
+			meta(property="og:image" 		content="PLACE_YOUR_IMAGE_URL")
+
+		//- Share graphs that doesn't change
+		meta(property="og:type" 		content="website")
 		meta(name="twitter:card", content="summary")
 
 		//- stylesheets
