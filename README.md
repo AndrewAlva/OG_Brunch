@@ -2,6 +2,13 @@
 My first brunch boilerplate created from scratch.
 
 
+## Some cool features
+* Grid system based on SCSS vars and formulas/functions to set and calculate:
+	* Columns
+	* Gutters
+	* Left/right margin of the whole grid
+
+
 ## Development Environment
 Hi there, this project is built by npm and brunch. It's coded oriented to use "modules" and "objects" of HTML and CSS with Jade and SCSS.
 
